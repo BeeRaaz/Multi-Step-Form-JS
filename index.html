@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Step User Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="form-container">
+    <h1>User Registration</h1>
+    <div id="form-step-recorder">
+      <div id="form-first-step">
+        <h2 id="persInfo">Personal <br> Information</h2>
+      </div>
+      <div id="form-secpnd-step">
+        <h2  id="contInfo">Contact <br> Information</h2>
+      </div>
+      <div id="form-third-step">
+        <h2  id="createAccInfo">Create <br> Account</h2>
+      </div>
+    </div>
+    <form id="form" method="post">
+      <!-- creating-form-first-step -->
+      <div id="form-first">
+        <div id="form-first-details">
+          
+          <!-- input for first name -->
+          <div class="inputGroup">
+            <label for="firstName">First Name:</label> <br>
+            <input type="text" name="firstName" id="firstName" placeholder="First Name">
+            <span id="firstName-Error"></span>
+          </div>
+
+          
+          <!-- input for last name -->
+          <div class="inputGroup">
+            <label for="lastName">Last Name:</label> <br>
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+            <span id="lastName-Error"></span>
+          </div>
+
+
+          <!-- input for DOB -->
+          <label for="birthDate">DOB:</label>
+          <input type="date" name="birthDate" id="birthDate">
+            
+          
+          <!-- input for age -->
+          <div class="inputGroup">
+            <label for="age">Age:</label>
+            <input type="text" name="age" id="age" placeholder="Age">
+            <span id="age-Error"></span>
+          </div>
+
+
+          <!-- input for gender -->
+          <label for="gender">Gender:</label>
+          <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+          </select>
+
+          <!-- button to go to second step of form -->
+          <div id="buttonContainer">
+            <button type="button" class="nextButtonFormFirst">Next</button>
+          </div>
+        </div>
+      </div>
+      <!-- creating-form-second-step -->
+      <div id="form-second">
+        <div id="form-second-details">
+
+          <!-- input-for-email- -->
+          <div class="inputGroup">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="xyz@gmail.com" required>
+            <span id="email-Error"></span>
+          </div>
+
+
+          <!-- input-for-phone-number- -->
+          <div class="inputGroup">
+            <label for="phoneNumber">Phone No:</label>
+            <input type="text" name="phoneNumber" id="phoneNumber" placeholder="XXX-XXX-XXXX" required>
+            <span id="phone-Error"></span>
+          </div>
+
+
+          <!-- input-for-address- -->
+          <label for="address">Address:</label>
+          <input type="text" name="address" id="address">
+
+
+          <!-- input-for-city- -->
+          <label for="city">City:</label>
+          <input type="text" name="city" id="city">
+
+          
+          <!-- input-for-country- -->
+          <div class="inputGroup">
+            <label for="country">Country:</label>
+            <input type="text" name="country" id="country" placeholder="NEPAL" required>
+            <span id="country-Error"></span>
+          </div>
+
+
+          
+          <!-- button to go to either first or third step of form -->
+          <div id="form-second-buttonContainer">
+            <!-- button to go back to first step of form -->
+            <button type="button" class="prevButtonFormSecond">Previous</button>
+            <!-- button to go further to third step of form -->
+            <button type="button" class="nextButtonFormSecond">Next</button>
+          </div>
+        </div>
+      </div>
+      <!-- creating-form-third-step -->
+      <div id="form-third">
+        <div id="form-third-details">
+          <!-- input-for-username- -->
+          <div class="inputGroup">
+            <label for="usernane">Username:</label>
+            <input type="text" name="username" id="username" required>
+            <span id="username-Error"></span>
+          </div>
+          
+          <!-- input-for-password -->
+          <div class="inputGroup">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <span id="password-Error"></span>
+          </div>
+          
+          <!-- input-for-password-confirmation -->
+          <div class="inputGroup">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" required>
+            <span id="confirmPassword-Error"></span>
+          </div>
+
+
+
+          <!-- button to go to either first or third step of form -->
+          <div id="form-third-buttonContainer">
+            <!-- button to go back to first step of form -->
+            <button type="button" class="prevButtonFormThird">Previous</button>
+            <!-- button to go further to third step of form -->
+            <button type="button" class="nextButtonFormThird">Next</button>
+          </div>
+        </div>
+      </div>
+      <!-- creating-form-confirmation-step -->
+      <div id="confirmationPage">
+        <div class="outputGroup">
+          <label>First Name:</label>
+          <span id="firstName-Output"></span>
+        </div>
+        <div class="outputGroup">
+          <label>Last Name:</label>
+          <span id="lastName-Output"></span>
+        </div>
+        <div class="outputGroup">
+          <label>DOB:</label>
+          <span id="birthDate-Output"></span>
+        </div>
+        <div class="outputGroup">
+          <label>Age:</label>
+          <span id="age-Output"></span>
+        </div>
+        <div class="outputGroup">
+          <label>Gender:</label>
+          <span id="gender-Output"></span>
+        </div>
+        <div class="outputGroup">
+          <label>Email:</label>
+          <span id="email-Output"></span>
+        </div>
+        <div class="outputGroup">
+          <label>Phone Number:</label>
+          <span id="phoneNumber-Output"></span>
+        </div>
+        <div class="outputGroup">
+          <label>Address:</label>
+          <span id="address-Output"></span>
+        </div>
+        <div class="outputGroup">
+          <label>City:</label>
+          <span id="city-Output"></span>
+        </div>
+        <div class="outputGroup">
+          <label>Country:</label>
+          <span id="country-Output"></span>
+        </div>
+        <div class="outputGroup">
+          <label>Username:</label>
+          <span id="username-Output"></span>
+        </div>
+        <div class="outputGroup">
+          <label>Password:</label>
+          <span id="password-Output"></span>
+        </div>
+        <div class="outputGroup">
+          <label>Confirm Password:</label>
+          <span id="confirmPassword-Output"></span>
+        </div>
+
+        <!--for notes -->
+        <div id="note">
+          <h4>NOTE: <br>Please review the details provided very carefully before you submit the form.</h4>
+        </div>
+      
+
+
+        <!-- button to go to either third or final(submission) step of form -->
+        <div id="form-fourth-buttonContainer">
+          <!-- button to go back to third step of form -->
+          <button type="button" class="prevButtonFormFourth">Previous</button>
+          <!-- button to go further to final(submission) step of form -->
+          <button type="submit" class="submitButton">Submit</button>
+        </div>
+      </div
+    </form>
+    
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
