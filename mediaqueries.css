@@ -1,17 +1,9 @@
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
 
-    body {
-        width: 100vw;
-        height: 100vh;
-    }
-    
+
     #form-container {
-        width: 100%;
         height: 100%;
-        padding: 0px;
-        margin: 0px;
-    
-        
+        width: 100%;
     }
 
     #form-container h1 {
@@ -20,7 +12,7 @@
 
     #form-step-recorder {
         font-size: 10px;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     #form-first-details, #form-second-details, #form-third-details {
@@ -136,21 +128,10 @@
 }
 
 @media (max-width: 375px) {
-    body {
-        width: 100%;
-        height: 100%;
-    }
 
     #form-container {
-        width: 100%;
         height: 100%;
-        background-color:  rgb(255, 255, 255);
-        padding: 0px 10px;
-        margin: 0px;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        
+        width: 100%;
     }
 
     #form-container h1 {
@@ -283,22 +264,12 @@
 }
 
 
-@media (max-width: 475px) {
-    body {
-        width: 100%;
-        height: 100%;
-    }
+@media (max-width: 425px) {
+
 
     #form-container {
-        width: 100%;
         height: 100%;
-        background-color:  rgb(255, 255, 255);
-        padding: 0px;
-        margin: 0px;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        
+        width: 100%;
     }
 
     #form-container h1 {
@@ -407,18 +378,359 @@
         width: 10px;
         height: 10px;
     }
-}
+} */
 
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
 
     #form-container {
-        width: 50%;
+        width: 100%;
         height: 100%;
+    }
+
+    #form-container h1 {
+        font-size: 25px;
+    }
+
+    #form-step-recorder {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    #form-first-details, #form-second-details, #form-third-details {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 5px;
+        font-size: 20px;
+    }
+
+    
+
+
+    input, select {
+        width: 100%;
+        height: 42px;
+        padding: 10px 10px;
+        margin: 5px 0px;
+        border: 1px solid gray;
+        outline-color: #9de4eb;
+        background-color: inherit;
+        font-size: 15px;
+        color: #363636;
+    }
+    
+    ::placeholder {
+        font-size: 10px;
+        color: #363636;
+    }
+
+    #buttonContainer, #form-second-buttonContainer, #form-third-buttonContainer, #form-fourth-buttonContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .nextButtonFormFirst, .nextButtonFormSecond, .nextButtonFormThird {
+        width: 100px;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .prevButtonFormSecond, .prevButtonFormThird, .prevButtonFormFourth {
+        width: 100px;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+        text-align: center;
+        border: 0.5px solid black;
+    }
+    
+    
+    .submitButton {
+        width: 150px;
+        padding: 15.5px 25px;
+        font-size: 20px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .inputGroup {
+        width: 100%;
+        position: relative;
+    }
+    
+    .inputGroup span {
+        position: absolute;
+        right: 7px;
+        bottom: 20px;
+        font-size: 10px;
+        font-weight: 200;
+        color: #e08181;
+    }
+    
+    img {
+        width: 10px;
+        height: 10px;
     }
 }
 
-@media (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+
+    #form-container {
+        width: 60%;
+        height: 100%;
+    }
+
+    #form-container h1 {
+        font-size: 25px;
+    }
+
+    #form-step-recorder {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    #form-first-details, #form-second-details, #form-third-details {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 5px;
+        font-size: 20px;
+    }
+
+    
+
+
+    input, select {
+        width: 100%;
+        height: 42px;
+        padding: 10px 10px;
+        margin: 5px 0px;
+        border: 1px solid gray;
+        outline-color: #9de4eb;
+        background-color: inherit;
+        font-size: 15px;
+        color: #363636;
+    }
+    
+    ::placeholder {
+        font-size: 10px;
+        color: #363636;
+    }
+
+    #buttonContainer, #form-second-buttonContainer, #form-third-buttonContainer, #form-fourth-buttonContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .nextButtonFormFirst, .nextButtonFormSecond, .nextButtonFormThird {
+        width: 100px;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .prevButtonFormSecond, .prevButtonFormThird, .prevButtonFormFourth {
+        width: 100px;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+        text-align: center;
+        border: 0.5px solid black;
+    }
+    
+    
+    .submitButton {
+        width: 150px;
+        padding: 15.5px 25px;
+        font-size: 20px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .inputGroup {
+        width: 100%;
+        position: relative;
+    }
+    
+    .inputGroup span {
+        position: absolute;
+        right: 7px;
+        bottom: 20px;
+        font-size: 10px;
+        font-weight: 200;
+        color: #e08181;
+    }
+    
+    img {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1440px) {
+
+    #form-container {
+        width: 40%;
+        height: 100%;
+    }
+
+    #form-container h1 {
+        font-size: 25px;
+    }
+
+    #form-step-recorder {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    #form-first-details, #form-second-details, #form-third-details {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 5px;
+        font-size: 20px;
+    }
+
+    
+
+
+    input, select {
+        width: 100%;
+        height: 42px;
+        padding: 10px 10px;
+        margin: 5px 0px;
+        border: 1px solid gray;
+        outline-color: #9de4eb;
+        background-color: inherit;
+        font-size: 15px;
+        color: #363636;
+    }
+    
+    ::placeholder {
+        font-size: 10px;
+        color: #363636;
+    }
+
+    #buttonContainer, #form-second-buttonContainer, #form-third-buttonContainer, #form-fourth-buttonContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .nextButtonFormFirst, .nextButtonFormSecond, .nextButtonFormThird {
+        width: 100px;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .prevButtonFormSecond, .prevButtonFormThird, .prevButtonFormFourth {
+        width: 100px;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+        text-align: center;
+        border: 0.5px solid black;
+    }
+    
+    
+    .submitButton {
+        width: 150px;
+        padding: 15.5px 25px;
+        font-size: 20px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .inputGroup {
+        width: 100%;
+        position: relative;
+    }
+    
+    .inputGroup span {
+        position: absolute;
+        right: 7px;
+        bottom: 20px;
+        font-size: 10px;
+        font-weight: 200;
+        color: #e08181;
+    }
+    
+    img {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* @media (max-width: 1024px) {
     #form-container {
         width: 60%;
         height: 100%;
@@ -609,4 +921,4 @@
         width: 12px;
         height: 12px;
     }
-}
+} */
